@@ -1,0 +1,66 @@
+body {
+    font-family: "Marmelad", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-image: url('/ecommerce/images/bg\ img\ loginpage.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent background image from overflowing */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #e81272;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.switch-mode {
+    margin-top: 20px;
+}
+
+.switch-mode a {
+    color: #e81272;
+    text-decoration: none;
+}
+
+.switch-mode a:hover {
+    text-decoration: underline;
+} 
+

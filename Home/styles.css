@@ -1,0 +1,376 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Marmelad", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: blue;
+    
+}
+
+header {
+    background-color: #f8f8f8;
+    padding-top: 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    box-shadow: 1 2px 4px rgba(176, 176, 180, 0.1); /* Add box shadow */
+    background-color: #e9a3a3;
+    margin-top: -10px;
+}
+
+.logo img {
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links ul li {
+    margin-right: 20px;
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s; /* Add transition for smoother color change */
+}
+
+.navbar-links ul li a:hover {
+    color: rgb(244, 16, 153); /* Change color on hover */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    border: 3px solid rgb(244, 16, 153) ; /* Set pink border for search box */
+    border-radius: 15px;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.search button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #e81272;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons i span {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    text-transform: lowercase; /* Ensure the text remains lowercase */
+}
+.icons a {
+    display: inline-block; /* Ensure anchor tags take up space */
+    text-decoration: none;
+    color: inherit;
+}
+
+.icons a:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Scroll container */
+.scroll-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scroll wrapper */
+.scroll-wrapper {
+    display: flex;
+}
+
+/* Scroll items */
+.scroll-item {
+    flex: 0 0 auto;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.scroll-item img {
+    width: 280px; /* Adjust image width as needed */
+    height: auto;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.scroll-item img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.scroll-item button {
+    display: block;
+    margin-top: 10px;
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Scroll arrow */
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+/* Existing CSS */
+
+.scroll-arrow.left {
+    left: 10px;
+    right: auto;
+}
+
+.scroll-arrow.right {
+    right: 10px;
+    left: auto;
+}
+.section1{
+    width: 80%;
+    overflow: hidden; /* Ensure the image doesn't overflow its container */
+    margin: 0 auto;
+    text-align: center;
+
+}
+.section1 img{
+    width: 80%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    
+}
+.section2{
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-top: 20px; /* Add margin between section1 and section2 */
+    margin-left: 40px;
+
+}
+.section2 img{
+    max-width: calc(80% - 2px); /* Adjust width for all images to fit in one line with gaps */
+    height: auto;
+    display: block;
+    margin-right: 10px; /* Add margin between section2 images */
+    transition: transform 0.3s; /* Add transition for hover effect */
+    border-radius: 100px;
+}
+.section2 img:hover {
+    transform: scale(1.5); /* Enlarge the images on hover */
+    cursor: pointer;
+}
+
+#sec3{
+    margin-left: 40px;
+}
+.section3{
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-top: 20px; /* Add margin between section1 and section2 */
+    margin-left: 40px;
+
+}
+.section3 img{
+    max-width: calc(40% - 2px); /* Adjust width for all images to fit in one line with gaps */
+    height: auto;
+    display: block;
+    margin-right: 10px; /* Add margin between section2 images */
+}
+
+#yell{
+    margin-left: 40px;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.yellow-container {
+    background-color: rgb(249, 249, 118);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+.yellow-container a {
+    cursor: pointer; /* Change cursor to pointer */
+}
+.yellow-container img {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 25px;
+}
+
+.yellow-container img:hover {
+    transform: scale(1.1);
+}
+
+#models{
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:rgb(87, 5, 164);
+    
+}
+.model-image {
+    display: flex; /* Use flexbox to align images in one row */
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 40px;
+}
+
+.model-image img {
+    width: 200px;
+    height: 250px;
+    margin: 40px; /* Add spacing between images */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.model-image img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+.section4 {
+    width: 100%;
+    overflow: hidden; /* Ensure the image doesn't overflow its container */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.section4 img {
+    width: 100%; /* Ensure the image covers the entire width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+    cursor: pointer;
+}
+.section5 {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-top: 20px; /* Add margin between section1 and section2 */
+    margin-left: 40px;
+}
+.section5 .image-container {
+    text-align: center;
+}
+.section5 img {
+    max-width: calc(70% - 2px); /* Adjust width for all images to fit in one line with gaps */
+    height: auto;
+    display: block;
+    margin-right: 10px; /* Add margin between section2 images */
+    transition: transform 0.3s; /* Add transition for hover effect */
+    border-radius: 100px;
+}
+.section5 img:hover {
+    transform: scale(1.1); /* Enlarge the images on hover */
+    cursor: pointer;
+}
+.section5 span {
+    display: block;
+    font-size: 20px;
+    
+}
+.image-container a{
+    text-decoration: none;
+    color: #333;
+}
+.glamhaven-footer {
+    background-color: #d3cdcd;
+    padding: 50px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.marquee{
+    background-color: rgb(243, 41, 159)  ;
+    height: 35px;
+    margin-top: -170px;
+    font-weight: bolder;
+    padding: 5px;
+}

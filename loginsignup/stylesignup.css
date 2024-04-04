@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/ecommerce/images/bg\ signup.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align container to the right */
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signup-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    margin-right: auto; /* Add this line to move container to the left */
+    margin-left: 0; /* Add this line to reset left margin */
+}
+
+.signup-container h2 {
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #555555;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make text bold */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #dddddd; /* Stylish input box */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e81272;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.form-group button:hover {
+    background-color: #c70039;
+}
+
+.switch-mode p {
+    color: #888888;
+    margin-top: 20px;
+}
+
+.switch-mode a {
+    color: #e81272;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-mode a:hover {
+    text-decoration: underline;
+}
+
+
+

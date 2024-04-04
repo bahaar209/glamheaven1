@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+body {
+    font-family: "Marmelad", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-image: url('/ecommerce/images/lancome\ bg.jpg');
+    
+}
+.introimage {
+    width: 100%; /* Full width */
+    height: auto;
+    overflow: hidden; /* Hide overflowing content */
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.introimage img {
+    width: 100%; /* Make the image fill the entire width of its container */
+    display: block; /* Remove any default spacing around the image */
+}
+
+.category {
+    width: 100%; /* Full width */
+    white-space: nowrap; /* Prevent line breaks */
+    text-align: center;
+    align-items: center;
+    
+}
+.category-item {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center; /* Align text in the center */
+}
+
+.category-item img {
+    width: auto;
+    max-height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.category-item span {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.category img {
+    width: auto; /* Allow images to maintain their original aspect ratio */
+    max-height: 220px; /* Set a maximum height for category images */
+    display: inline-block; /* Display images inline */
+    margin: 0 5px; /* Add margin between images */
+    gap: 50px;
+    border-radius: 100px;
+}
+.category-item:hover img {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.container {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.productflex{
+    display: flex;  
+    margin: 2rem 40px;
+    /* justify-content: space-around; */
+}
+.product-box {
+    height: 300px;
+    border: 1px solid #9b9696;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.503);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-options {
+    margin-top: 10px;
+}
+
+.wishlist-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.add-to-bag-btn {
+    background-color: rgb(234, 8, 117);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.product-price {
+    margin-top: 10px;
+}
+
